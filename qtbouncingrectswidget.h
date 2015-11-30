@@ -8,6 +8,8 @@
 
 struct QGraphicsScene;
 
+namespace ribi {
+
 struct QtBouncingRectsWidget : public QGraphicsView
 {
   QtBouncingRectsWidget(QWidget *parent = 0);
@@ -21,5 +23,7 @@ struct QtBouncingRectsWidget : public QGraphicsView
   private:
   QGraphicsScene * const m_scene;
 };
+
+} //~namespace ribi
 
 #endif // QTBOUNCINGRECTSWIDGET_H

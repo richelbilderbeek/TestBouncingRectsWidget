@@ -6,7 +6,7 @@
 #include "qtbouncingrectswidget.h"
 #pragma GCC diagnostic pop
 
-QtBouncingRectsWidget::QtBouncingRectsWidget(QWidget *parent)
+ribi::QtBouncingRectsWidget::QtBouncingRectsWidget(QWidget *parent)
   : QGraphicsView(parent),
     m_scene(new QGraphicsScene(this->rect(),this))
 {
@@ -33,7 +33,7 @@ QtBouncingRectsWidget::QtBouncingRectsWidget(QWidget *parent)
 }
 
 
-void QtBouncingRectsWidget::resizeEvent(QResizeEvent *)
+void ribi::QtBouncingRectsWidget::resizeEvent(QResizeEvent *)
 {
   m_scene->setSceneRect(this->rect());
 }

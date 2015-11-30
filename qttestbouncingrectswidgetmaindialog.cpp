@@ -1,11 +1,11 @@
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Weffc++"
 #include "qtbouncingrectswidget.h"
-#include "qttooltestbouncingrectswidgetmaindialog.h"
-#include "ui_qttooltestbouncingrectswidgetmaindialog.h"
+#include "qttestbouncingrectswidgetmaindialog.h"
+#include "ui_qttestbouncingrectswidgetmaindialog.h"
 #pragma GCC diagnostic pop
 
-QtToolTestBouncingRectsWidgetMainDialog::QtToolTestBouncingRectsWidgetMainDialog(QWidget *parent) :
+ribi::tbrw::QtMainDialog::QtMainDialog(QWidget *parent) :
   QtHideAndShowDialog(parent),
   ui(new Ui::QtToolTestBouncingRectsWidgetMainDialog)
 {
@@ -13,7 +13,7 @@ QtToolTestBouncingRectsWidgetMainDialog::QtToolTestBouncingRectsWidgetMainDialog
   ui->layout->addWidget(new QtBouncingRectsWidget(this));
 }
 
-QtToolTestBouncingRectsWidgetMainDialog::~QtToolTestBouncingRectsWidgetMainDialog() noexcept
+ribi::tbrw::QtMainDialog::~QtMainDialog() noexcept
 {
   delete ui;
 }
